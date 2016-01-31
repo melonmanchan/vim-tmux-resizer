@@ -13,8 +13,8 @@ function! IntelligentVerticalResize(direction) abort
     execute l:command
 endfunction
 
-nnoremap <silent> <m-k> :resize +1<CR>
-nnoremap <silent> <m-j> :resize -1<CR>
+nnoremap <silent> <m-k> :resize -1<CR>
+nnoremap <silent> <m-j> :resize +1<CR>
 nnoremap <silent> <m-h> :call IntelligentVerticalResize('left')<CR>
 nnoremap <silent> <m-l> :call IntelligentVerticalResize('right')<CR>
 
