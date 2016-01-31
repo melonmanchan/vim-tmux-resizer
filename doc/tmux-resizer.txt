@@ -1,1 +1,24 @@
-TODO: Documentation here!
+*tmux-resizer.txt* Resize tmux panes and vim splits with same shortcuts
+
+==============================================================================
+CONTENTS                               *tmux-resizer-contents*
+
+
+==============================================================================
+INTRODUCTION                           *tmux-resizer*
+
+Vim-tmux-resizer is a simple plugin that helps you resize Vim splits the same 
+way you can with tmux panes! By default, the bindings are Alt-key plus hjkl.
+This plugin is meant to play together with the awesome vim-tmux-navigator
+plugin so check that out too! Remember to add the bindings to your .tmux.conf
+as specified in the README.md!
+
+NOTE: This requires tmux v1.8 or higher.
+
+==============================================================================
+CONFIGURATION                             *tmux-resizer-configuration*
+
+To be done!
+
+ vim:tw=78:ts=8:ft=help:norl:
+
