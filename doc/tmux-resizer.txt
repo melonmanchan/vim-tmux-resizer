@@ -18,7 +18,7 @@ NOTE: This requires tmux v1.8 or higher.
 ==============================================================================
 CONFIGURATION                             *tmux-resizer-configuration*
 
-To be done!
+You can customise your shortcuts with let g:tmux_navigator_no_mappings = 1
+and then rebinding appropriately. See the README.d for more information!
 
- vim:tw=78:ts=8:ft=help:norl:
-
+vim:tw=78:ts=8:ft=help:norl:

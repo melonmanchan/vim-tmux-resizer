@@ -14,4 +14,19 @@ bind -n M-l if-shell "$is_vim" "send-keys M-l" "resize-pane -R 10"
 bind -n M-k if-shell "$is_vim" "send-keys M-k" "resize-pane -U 5"
 bind -n M-j if-shell "$is_vim" "send-keys M-j" "resize-pane -D 5"
 ```
+# Configuration
 
+## Custom bindings
+
+If you'd prefer to use your own shortcuts instead of the alt keys and Vim movement,
+add the following to your .vimrc, changing mappings as needed!
+
+```vim
+let g:tmux_resizer_no_mappings = 1
+
+nnoremap <silent> {Left-mapping} :TmuxResizeLeft<cr>
+nnoremap <silent> {Down-Mapping} :TmuxResizeDown<cr>
+nnoremap <silent> {Up-Mapping} :TmuxResizeUp<cr>
+nnoremap <silent> {Right-Mapping} :TmuxResizeRight<cr>
+
+```
