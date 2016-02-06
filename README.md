@@ -1,5 +1,5 @@
 # Vim Tmux Resizer
-Resize tmux panes and vim splits with Alt + hjkl! Plays well with vim-tmux-navigator
+Resize tmux panes and vim splits with Alt + hjkl! Plays well with [vim-tmux-navigator](vim-tmux-navigator).
 
 # Installation
 
