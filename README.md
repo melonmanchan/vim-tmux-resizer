@@ -4,7 +4,7 @@ Resize tmux panes and vim splits with Alt + hjkl! Plays well with [vim-tmux-navi
 # Installation
 
 ## Tmux
-Add the following lines to your .tmux.conf file
+Add the following lines to your `.tmux.conf` file
 
 ```tmux
 is_vim='echo "#{pane_current_command}" | grep -iqE "(^|\/)g?(view|n?vim?x?)(diff)?$"'
@@ -30,3 +30,13 @@ nnoremap <silent> {Up-Mapping} :TmuxResizeUp<cr>
 nnoremap <silent> {Right-Mapping} :TmuxResizeRight<cr>
 
 ```
+
+## Resize amount
+
+The default horizontal resize step value is `5`, but you can override it in your `.vimrc`
+
+```vim
+let g:window_resize_count = 2
+```
+
+Optionally update your `.tmux.conf` resize-pane values to match.
