@@ -1,3 +1,7 @@
+# NOTICE: THIS REPOSITORY HAS BEEN ARCHIVED
+
+Please use https://github.com/RyanMillerC/better-vim-tmux-resizer or https://github.com/aserowy/tmux.nvim instead. Thanks!
+
 # Vim Tmux Resizer
 Resize tmux panes and vim splits with Alt + hjkl! Plays well with [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator).
 
