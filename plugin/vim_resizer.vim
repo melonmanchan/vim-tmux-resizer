@@ -3,7 +3,7 @@ function! s:UseTmuxResizerMappings()
 endfunction
 
 function! IntelligentVerticalResize(direction) abort
-    let l:window_resize_count = 5
+	let g:window_resize_count = get(g:, 'window_resize_count', 5)
     let l:current_window_is_last_window = (winnr() == winnr('$'))
 
     if (a:direction ==# 'left')
@@ -13,7 +13,7 @@ function! IntelligentVerticalResize(direction) abort
     endif
 
     let l:modifier = l:current_window_is_last_window ? l:modifier_1 : l:modifier_2
-    let l:command = 'vertical resize ' . l:modifier . l:window_resize_count . '<CR>'
+    let l:command = 'vertical resize ' . l:modifier . g:window_resize_count . '<CR>'
     execute l:command
 endfunction
 
